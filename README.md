@@ -9,6 +9,7 @@ The main discussion thread is [here](https://github.com/rust-ml/discussion/issue
 
 So far, these seem to be the different areas of focus:
 - **General-purpose pre-processing**
+
 A sufficiently complete toolkit to mold raw data before getting into a machine learning model (dimensionality reduction, scaling/normalisation, discretization, missing value imputation, etc.).
 - **NLP**
 Rust seems to have plenty of small crates, more or less experimental, for dealing with natural language (see also [this](https://users.rust-lang.org/t/interest-for-nlp-in-rust/15331) discussion on Rust internals). It's probably time to coordinate: identify functionality gaps, generalize some of the existing crates and create a coherent story.
