@@ -10,14 +10,14 @@ The main discussion thread is [here](https://github.com/rust-ml/discussion/issue
 We have identified different areas of focus:
 
 - [**General-purpose pre-processing**](#general-purpose-pre-processing)
-- **NLP**
-- **Classical ML**
-- **Deep Learning**
-- **Deployment**
-- **DataFrames**
-- **Interoperability**
-- **Reinforcement Learning**
-- **Computer Vision**
+- [**NLP**](#nlp)
+- [**Classical ML**](#classical-ml)
+- [**Deep Learning**](#deep-learning)
+- [**Deployment**](#deployment)
+- [**DataFrames**](#dataframes)
+- [**Interoperability**](#interoperability)
+- [**Reinforcement Learning**](#reinforcement-learning)
+- [**Computer Vision**](#computer-vision)
 
 Every single one of these areas is looking for contributors!
 
@@ -26,13 +26,13 @@ Every single one of these areas is looking for contributors!
 
 A sufficiently complete toolkit to mold raw data before getting into a machine learning model (dimensionality reduction, scaling/normalisation, discretization, missing value imputation, etc.).
 
-Contributors: @jblondin, @LukeMathWalker
+Contributors: [@jblondin](https://github.com/jblondin), [@LukeMathWalker](https://github.com/LukeMathWalker)
 
 ## NLP
 
 Rust seems to have plenty of small crates, more or less experimental, for dealing with natural language (see also [this](https://users.rust-lang.org/t/interest-for-nlp-in-rust/15331) discussion on Rust internals). It's probably time to coordinate: identify functionality gaps, generalize some of the existing crates and create a coherent story.
 
-Contributors: @jbowles, @danieldk, @rth, @sebpuetz
+Contributors: [@jbowles](https://github.com/jbowles), [@danieldk](https://github.com/danieldk), [@rth](https://github.com/rth), [@sebpuetz](https://github.com/sebpuetz)
 
 ## Classical ML
 
