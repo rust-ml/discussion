@@ -8,13 +8,18 @@ The main discussion thread is [here](https://github.com/rust-ml/discussion/issue
 # Work streams
 
 So far, these seem to be the different areas of focus:
+
 - **General-purpose pre-processing**
 
 A sufficiently complete toolkit to mold raw data before getting into a machine learning model (dimensionality reduction, scaling/normalisation, discretization, missing value imputation, etc.).
 
+Contributors: @jblondin, @LukeMathWalker
+
 - **NLP**
 
 Rust seems to have plenty of small crates, more or less experimental, for dealing with natural language (see also [this](https://users.rust-lang.org/t/interest-for-nlp-in-rust/15331) discussion on Rust internals). It's probably time to coordinate: identify functionality gaps, generalize some of the existing crates and create a coherent story.
+
+Contributors: @jbowles, @danieldk, @rth, @sebpuetz
 
 - **Classical ML**
 
@@ -29,16 +34,25 @@ There is ongoing work in the [TVM](https://tvm.ai/) project: there are Rust bind
 At the same time, there is interest in exploring the feasibility and ergonomics of a pure-Rust crate for DL.
 
 - **Deployment**
+
 Bridging the gap from a working prototype to production: Rust has a chance to shine here, putting to use well known crates such as [rocket](https://rocket.rs/). Getting a model exposed behind a performant API should be a matter of configuration: what protocol do I want to use (HTTP/gRPC/etc.), where is the model, do I want to expose Prometheus metrics, where do I send the logs. Done, shipped.
+
 - **DataFrames**
+
 There is an ongoing discussion [here](https://github.com/rust-dataframe/discussion/issues) on what challenges a DataFrame library in Rust should tackle and what design constraints it should obey.
+
 - **Interoperability**
+
 No ecosystem is an island: we need to be able to serialize and deserialize the most common file formats in the ML/data space - hdf5, Parquet, NumPy's npy, etc.
 Each of these format has seen some work, but the maturity of the corresponding crate might vary.
+
 - **Reinforcement Learning**
+
 It has been mentioned that Rust could be used to develop training environments/gyms for RL models. Is there latitude to interact with the work of the Rust gamedev community?
+
 - **Computer Vision**
-[opencv-rust](https://github.com/twistedfall/opencv-rust) was mentioned, and I know @xd009642 is working on [ndarray-vision](https://github.com/xd009642/ndarray-vision). The topic was not extensively discussed in this thread, but there might be a wider community interested that we haven't been able to intercept here.
+
+[opencv-rust](https://github.com/twistedfall/opencv-rust) was mentioned, and @xd009642 is working on [ndarray-vision](https://github.com/xd009642/ndarray-vision). The topic was not extensively discussed, but there might be a wider community interested that we haven't been able to intercept here.
 
 
 Each of these work streams is looking for contributors!
