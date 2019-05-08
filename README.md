@@ -11,14 +11,23 @@ So far, these seem to be the different areas of focus:
 - **General-purpose pre-processing**
 
 A sufficiently complete toolkit to mold raw data before getting into a machine learning model (dimensionality reduction, scaling/normalisation, discretization, missing value imputation, etc.).
+
 - **NLP**
+
 Rust seems to have plenty of small crates, more or less experimental, for dealing with natural language (see also [this](https://users.rust-lang.org/t/interest-for-nlp-in-rust/15331) discussion on Rust internals). It's probably time to coordinate: identify functionality gaps, generalize some of the existing crates and create a coherent story.
+
 - **Classical ML**
+
 There are several unmaintained crates (e.g. [rustlearn](https://github.com/maciejkula/rustlearn), [rusty-machine](https://github.com/AtheMathmo/rusty-machine)). The language and the ecosystem have moved considerably forward since those experiments and now it's a good time to isolate core components and provide a set of community-backed interfaces for ML models and pipelines, making sure they are fit for purpose by trying them out while implementing or porting classical ML algorithms (trees, SVMs, Gaussian Processes, clustering, etc.). Some of these algorithms already exists, scattered in different crates, at different stages of maturity and maintenance - coordination and re-use should be promoted whenever possible.
+
 - **Deep Learning**
+
 There are bindings for both `PyTorch` ([tch-rs](https://github.com/LaurentMazare/tch-rs)) and `Tensorflow` ([tensorflow](https://github.com/tensorflow/rust)), but they could use some love to fill in the gaps and polish the API.
+
 There is ongoing work in the [TVM](https://tvm.ai/) project: there are Rust bindings for the runtime, but no bindings to the TVM compiler. TVM could be used as backend for a high-level DL library in Rust, thus providing access to a wide range of different hardwares.
+
 At the same time, there is interest in exploring the feasibility and ergonomics of a pure-Rust crate for DL.
+
 - **Deployment**
 Bridging the gap from a working prototype to production: Rust has a chance to shine here, putting to use well known crates such as [rocket](https://rocket.rs/). Getting a model exposed behind a performant API should be a matter of configuration: what protocol do I want to use (HTTP/gRPC/etc.), where is the model, do I want to expose Prometheus metrics, where do I send the logs. Done, shipped.
 - **DataFrames**
