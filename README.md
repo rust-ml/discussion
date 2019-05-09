@@ -28,15 +28,23 @@ A sufficiently complete toolkit to mold raw data before getting into a machine l
 
 Contributors: [@jblondin](https://github.com/jblondin), [@LukeMathWalker](https://github.com/LukeMathWalker)
 
+Repository: [nlp-discussion](https://github.com/rust-ml/classical-ml-discussion)
+
 ## NLP
 
 Rust seems to have plenty of small crates, more or less experimental, for dealing with natural language (see also [this](https://users.rust-lang.org/t/interest-for-nlp-in-rust/15331) discussion on Rust internals). It's probably time to coordinate: identify functionality gaps, generalize some of the existing crates and create a coherent story.
 
 Contributors: [@jbowles](https://github.com/jbowles), [@danieldk](https://github.com/danieldk), [@rth](https://github.com/rth), [@sebpuetz](https://github.com/sebpuetz)
 
+Repository: [nlp-discussion](https://github.com/rust-ml/nlp-discussion)
+
 ## Classical ML
 
 There are several unmaintained crates (e.g. [rustlearn](https://github.com/maciejkula/rustlearn), [rusty-machine](https://github.com/AtheMathmo/rusty-machine)). The language and the ecosystem have moved considerably forward since those experiments and now it's a good time to isolate core components and provide a set of community-backed interfaces for ML models and pipelines, making sure they are fit for purpose by trying them out while implementing or porting classical ML algorithms (trees, SVMs, Gaussian Processes, clustering, etc.). Some of these algorithms already exists, scattered in different crates, at different stages of maturity and maintenance - coordination and re-use should be promoted whenever possible.
+
+Contributors: [@LukeMathWalker](https://github.com/LukeMathWalker)
+
+Repository: [nlp-discussion](https://github.com/rust-ml/classical-ml-discussion)
 
 ## Deep Learning
 
