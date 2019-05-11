@@ -28,7 +28,7 @@ A sufficiently complete toolkit to mold raw data before getting into a machine l
 
 Contributors: [@jblondin](https://github.com/jblondin), [@LukeMathWalker](https://github.com/LukeMathWalker)
 
-Repository: [nlp-discussion](https://github.com/rust-ml/classical-ml-discussion)
+Repository: [classical-ml-discussion](https://github.com/rust-ml/classical-ml-discussion)
 
 ## NLP
 
@@ -44,7 +44,7 @@ There are several unmaintained crates (e.g. [rustlearn](https://github.com/macie
 
 Contributors: [@LukeMathWalker](https://github.com/LukeMathWalker)
 
-Repository: [nlp-discussion](https://github.com/rust-ml/classical-ml-discussion)
+Repository: [classical-ml-discussion](https://github.com/rust-ml/classical-ml-discussion)
 
 ## Deep Learning
 
